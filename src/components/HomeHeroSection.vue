@@ -6,7 +6,7 @@
             <h1 class="hero_title">GIVING<br /> <span>GLOBAL</span><br /> <span>BRANDS</span><br /> A SEAT AT<br /> THE
                 TABLE
             </h1>
-            <div class="social_icons_list">
+            <div class="social_icons_list mob_view">
                 <ul>
                     <li><a href="#" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
                     <li><a href="#" target="_blank"><i class="ri-twitter-fill"></i></a></li>

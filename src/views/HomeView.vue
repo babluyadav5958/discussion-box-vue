@@ -1,7 +1,8 @@
 <template>
   <HomeHeroBanner />
+  <HomeMarquee class="desk_view" />
   <HomeInfoBox />
-  <HomeMarquee />
+  <HomeMarquee class="mob_view" />
 </template>
 
 <script setup>

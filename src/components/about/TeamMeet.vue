@@ -1,6 +1,6 @@
 <template>
     <div class="common_padding team_meet_sec">
-        <h3 class="inner_heading">Meet the team</h3>
+        <h3 class="title_h3">Meet the team</h3>
         <p class="team_desc">With our hearts and headquarters in Bristol, we are powered by diversity and committed to
             creating a more inclusive world, one discussion at a time. </p>
         <div class="team_grid_bg">
@@ -36,37 +36,37 @@ const teamContents = [
     },
     {
         key: 2,
-        name: 'Lisa marie carter',
+        name: 'JEMMA CHARLES',
         gender: 'She/Her',
-        designation: 'CEO & FOUNDER She/He',
+        designation: 'Chief Revenue Officer (CRO) Queer Woman Bsuiness Leader',
         image: profilePic2,
     },
     {
         key: 3,
-        name: 'Lisa marie carter',
+        name: 'LEANNE S.',
         gender: 'She/Her',
-        designation: 'CEO & FOUNDER She/He',
+        designation: 'Events & Sales Professional Championing Diversity in Bsuiness',
         image: profilePic3,
     },
     {
         key: 4,
-        name: 'Lisa marie carter',
+        name: 'SHILAH PEPPERALL',
         gender: 'She/Her',
-        designation: 'CEO & FOUNDER She/He',
+        designation: 'Woman in Technology Audience Acquisition Manager',
         image: profilePic4,
     },
     {
         key: 5,
-        name: 'Lisa marie carter',
+        name: 'PARICE OLU',
         gender: 'She/Her',
-        designation: 'CEO & FOUNDER She/He',
+        designation: 'Audience Development Executive Supporting Woman in Bsuinesses',
         image: profilePic5,
     },
     {
         key: 6,
-        name: 'Lisa marie carter',
+        name: 'JAKE SHAW',
         gender: 'She/Her',
-        designation: 'CEO & FOUNDER She/He',
+        designation: 'Audience Acquisition Manager',
         image: profilePic6,
     },
 ]

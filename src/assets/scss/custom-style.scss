@@ -36,7 +36,7 @@ img {
 }
 
 .common_padding {
-  padding: 0 6%;
+  padding: 0 8%;
 }
 
 .inner_heading {
@@ -44,4 +44,11 @@ img {
   font-weight: 400;
   text-transform: uppercase;
   margin: 0 0 20px 0;
+}
+.text_purple {
+  color: $secondary;
+}
+
+.position-relative {
+  position: relative;
 }

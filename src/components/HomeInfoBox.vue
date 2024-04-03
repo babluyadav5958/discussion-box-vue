@@ -16,7 +16,7 @@
             </div>
             <div class="col-md-4">
                 <div class="info_details_box">
-                    <div class="triangle_shape"><img src="@/assets/images/dts-shape.png" alt=""></div>
+                    <div class="triangle_shape mob_view"><img src="@/assets/images/dts-shape.png" alt=""></div>
                     <p>Open the door to <a href="#">genuine<br /> relationships</a> with C-Level<br /> executives peers.
                     </p>
                 </div>

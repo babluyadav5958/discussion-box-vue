@@ -30,6 +30,7 @@
   padding-top: 50px;
   padding-bottom: 20px;
   width: 50%;
+  position: relative;
 }
 .social_icons_list {
   padding-top: 20px;
@@ -220,5 +221,123 @@
   }
   to {
   transform: translate(-10%, -10%);
+  }
+}
+
+
+/*responsive*/
+@media (max-width:575px) {
+  .home_hero_section {
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .home_hero_left_part {
+    width: 100%;
+    padding-top: 35vw;
+    &::before {
+      content: '';
+      width: 1px;
+      height: 35vw;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $black;
+    }
+    &::after {
+      content: '';
+      width: 1px;
+      height: 13vw;
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $black;
+    }
+  }
+  .hero_title {
+    font-size: 14vw;    
+    transform: rotateX(30deg);
+    line-height: normal;
+  }
+  .hero_blur_bg1 {
+    top: 0;
+    left: inherit;
+    right: -25vw;
+    width: 80vw;
+    height: 100vw;
+  }
+  .home_hero_right_part::before,
+  .home_hero_right_part::after {
+    display: none;
+  }
+  .home_hero_right_part {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+        align-items: center;
+    .shadow_btn {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .info_details_box {
+    margin-bottom: 40px;
+    p {
+      font-size: 16px;
+    }
+  }
+  .home_info_box {
+    padding-left: 10%;
+    padding-right: 10%;
+    &>.row {
+      &>div:last-child {
+        .info_details_box {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .marquee_scroll {
+    .item {
+      font-size: 16px;
+    }
+  }
+  .hero_heading2 {
+    margin-bottom: 35px;
+    h2 {
+      font-size: 14vw;
+    }
+    .style1 {
+      font-size: 5vw;
+    }
+    .author_group {
+      font-size: 5vw;
+    }
+  }
+  .shadow_btn {
+    .shadow_drop {
+      display: none;
+    }
+  }
+  .hero_blur_bg2 {
+    width: 80vw;
+    height: 75vw;
+    bottom: -15%;
+    right: 22%;
+  }
+  .footer_container {
+    ul {
+      flex-direction: column;
+      display: flex;
+    }
+  }
+  .foot_social {
+    order: 10;
+    height: 80px !important;
+    a {
+      font-size: 20px;
+    }
   }
 }

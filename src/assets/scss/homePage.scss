@@ -1,0 +1,224 @@
+@import '../scss/components/fonts';
+@import '../scss/base/variables';
+@import '../scss/base/mixins';
+
+.home_hero_section {
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 50px;
+  border-bottom: 1px solid $black;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.hero_title {
+  font-family: $font-work-sans;
+  font-size: 4.5vw;
+  line-height: 5vw;
+  font-weight: 400;
+  transform: rotateX(25deg);
+  margin: 0;
+  span {
+    font-weight: 700;
+    background: #336EB8;
+      background: radial-gradient(circle farthest-corner at center center, #336EB8 49%, #222F40 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+}
+.home_hero_left_part {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  width: 50%;
+}
+.social_icons_list {
+  padding-top: 20px;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+    background: $white;
+    border: 1px solid #000;
+    padding: 0;
+    li {
+      display: inline-block;
+      a {
+        padding: 0 8px;
+        display: inline-block;
+        @include transition5;
+        &:hover {
+          background: $black;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+.home_hero_right_part {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  &::before {
+    content: '';
+    width: 1px;
+    height: 56%;
+    background: $black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: height 0.5s ease;
+    animation: lineAnimate1 2s;
+  }
+  &::after {
+    content: '';
+    width: 1px;
+    height: 15%;
+    background: $black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: height 0.5s ease;
+    animation: lineAnimate2 2s;
+  }
+}
+
+@keyframes lineAnimate1 {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 56%;
+  }
+}
+@keyframes lineAnimate2 {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 15%;
+  }
+}
+
+.hero_heading2 {
+    margin-bottom: 55px;
+    margin-left: -5px;
+    .style1 {
+        font-size: 18px;
+    }
+  h2 {
+    font-family: $font-chivo;
+    font-size: 60px;
+    font-weight: 600;
+    transform: rotateX(45deg);
+    margin: -24px 0 -15px 0;
+  }
+  .author_group {
+    display: flex;
+    padding-left: 50px;
+    font-size: 18px;
+    .style3 {
+        font-weight: 500;
+        margin-left: 5px;
+        .square_ico {
+            width: 8px;
+            height: 8px;
+            background-color: $black;
+            display: inline-block;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            margin: 0 1px;
+            @include transition5;
+        }
+        &:hover {
+            .square_ico {
+                transform: rotate(45deg) translateY(-9px) translateX(-6px);
+                transform-origin: center left;
+            }
+        }
+    }
+  }
+}
+
+.shadow_btn {
+    font-size: 12px;
+    font-weight: 500;    
+    margin-bottom: 30px;
+    position: relative;
+    .title {
+        color: $black;
+        background: #fff;
+        z-index: 1;
+        position: relative;
+        background-color: $white;
+        border: 1px solid $black;
+        display: inline-block;
+        padding: 7px 30px;
+        transform: translate(-5px, -5px);
+        @include transition5;
+    }
+    .shadow_drop {
+        background: $black;
+        width: $persentage-100;
+        height: $persentage-100;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &:hover {
+        .title {
+            transform: none;
+        }
+    }
+}
+
+.hero_blur_bg1 {
+  width: 28vw;
+  height: 28vw;
+  border-radius: 50%;
+  position: absolute;
+  top: -25%;
+  left: 38%;
+  background: radial-gradient(circle at 50% 50%, rgba(51, 110, 184, 1) 0%, rgba(238, 130, 238, 1) 100%);
+  filter: blur(40px);
+  opacity: 0.5;
+  animation: anime1 3s infinite  alternate;
+}
+
+@keyframes anime1 {
+  from {
+    transform: translate(-20%, -20%);
+  }
+  to {
+  transform: translate(-10%, -10%);
+  }
+}
+
+.hero_blur_bg2 {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -15%;
+  right: 22%;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 114, 255, 1) 0%, rgba(138, 190, 255, 1) 100%);
+  filter: blur(40px);
+  opacity: 0.6;
+  animation: anime2 4s infinite  alternate;
+}
+@keyframes anime2 {
+  from {
+    transform: translate(50%, -20%);
+  }
+  to {
+  transform: translate(-10%, -10%);
+  }
+}

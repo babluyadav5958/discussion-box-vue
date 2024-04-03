@@ -1,0 +1,107 @@
+.navbar {
+    background-color: #fffcf8;
+    border: 1px solid #000;
+    padding: 0;
+}
+.logo {
+    font-family: $font-chivo;
+    font-weight: 200;
+}
+.header_left_part {
+    align-self: stretch;
+    display: flex;
+    height: 50px;
+    a {
+        height: $persentage-100;
+        display: flex;
+        align-items: center;
+        &.logo {
+            border-left: 1px solid $black;
+            border-right: 1px solid $black;
+            padding: 0 15px;
+        }
+    }
+}
+.animate_logo {
+    padding-left: 35px;
+    padding-right: 35px;
+    font-weight: 500;
+    font-size: 18px;
+    .square_icon {
+        width: 8px;
+        height: 8px;
+        background-color: $blue;
+        display: inline-block;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        margin: 0 1px;
+        @include transition5;
+    }
+    &:hover {
+        .square_icon {
+            transform: rotate(45deg) translateY(-9px) translateX(-6px);
+            transform-origin: center left;
+        }
+    }
+}
+
+.navbar-toggler {
+    height: 50px;
+    border: none;
+    border-left: 1px solid $black;
+    border-radius: 0;
+    margin-left: 20px;
+    font-size: 16px;
+    padding: 0;
+    font-size: 25px;
+    color: $black;
+    width: 65px;
+    &:focus {
+        box-shadow: none;
+    }
+    &:hover {
+        background-color: $black;
+        color: #fff;
+    }
+}
+.user_login_btn {
+    border: 1px solid $black;
+    border-radius: 0;
+    font-size: 11px;
+    line-height: normal;
+    padding: 5px 7px;
+    i {
+        font-size: 14px;
+        vertical-align: middle;
+    }
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+}
+.header_right_part {
+    display: flex;
+    align-items: center;
+}
+
+
+/*responsive*/
+@media (max-width:575px) {
+    .navbar {
+        flex-wrap: nowrap;
+    }
+    .header_left_part {
+        .animate_logo {
+            display: none;
+        }
+        a.logo {
+            border-left: none;
+        }
+    }
+    .user_login_btn {
+        display: none;
+    }
+}

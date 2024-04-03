@@ -1,0 +1,140 @@
+@import './components/fonts';
+@import './base/variables';
+@import './base/mixins';
+
+
+body {
+  background: $black;
+  color: $white;
+}
+.navbar {
+  border-color: $white;
+  background-color: $black !important;
+}
+.header_left_part {
+  a {
+    color: $white;
+    &.logo {
+      border-color: $white;
+    }
+  }
+}
+.animate_logo {
+  .square_icon {
+    background-color: $white;
+  }
+}
+.user_login_btn {
+  border-color: $white;
+  color: $white;
+}
+.navbar-toggler {
+  border-color: $white;
+  color: $white;
+}
+
+.common_title_bg {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    border-bottom: 1px solid $white;
+    height: 50px;
+    display: flex;
+    .main_heading {
+        margin: 0;
+        font-weight: 300;
+        font-size: 20px;
+        display: inline-flex;
+        background-color: $white;
+        color: $black;
+        width: 198px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.about_info_sec {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .hero_heading2 {
+        .style1 {
+            font-size: 1.5vw;
+            font-weight: 200;
+            line-height: 1.5vw;
+        }
+        h2 {
+            font-size: 4.6vw;
+        }
+        .author_group {
+            font-size: 1.5vw;
+            font-weight: 200;
+            .style3 {
+                .square_ico {
+                    background-color: $white;
+                    width: 0.6vw;
+                    height: 0.6vw;
+                }
+            }
+        }
+    }
+}
+.about_story_sec {
+    h4 {
+        color: $secondary;
+        text-transform: uppercase;
+        font-family: $font-chivo;
+        font-weight: 300;
+        font-size: 1.8vw;
+    }
+}
+.stroy_info_box {
+    padding-right: 40%;
+    p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+}
+
+/*Team page*/
+.team_meet_sec {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.team_desc {
+  max-width: 450px;
+  font-weight: 300;
+  margin: 0;
+}
+.team_grid_bg {
+  margin-top: 60px;
+}
+.team_col_box {
+  margin-bottom: 50px;
+  .avatar {
+    width: 180px;
+    display: inline-block;
+    @include  transition5;
+  }
+  .team_name {
+    color: $secondary;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+  }
+  .team_gender {
+    color: $secondary;
+  }
+  .designation {
+    margin: 10px 0 0 0;
+    display: inline-block;
+    opacity: 0.6;
+    font-size: 14px;
+  }
+  &:hover {
+    .avatar {
+      transform: rotate(-10deg);
+    }
+  }
+}
